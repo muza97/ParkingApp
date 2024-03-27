@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { useNavigation } from '@react-navigation/native'; // Import useNavigation hook
-import { ArrowLeftIcon } from 'react-native-heroicons/solid'; // Ensure you've imported ArrowLeftIcon
+import { useNavigation } from '@react-navigation/native'; 
+import { ArrowLeftIcon } from 'react-native-heroicons/solid'; 
 
 const ProfileScreen = () => {
-  const navigation = useNavigation(); // Initialize the navigation hook
+  const navigation = useNavigation(); 
 
   return (
     <View className="flex-1 justify-center items-center">
-      {/* Back Button */}
+      
       <TouchableOpacity
         onPress={() => navigation.goBack()}
         className="bg-yellow-400 p-2 rounded-tr-2xl rounded-bl-2xl ml-4 absolute top-14 left-4"
