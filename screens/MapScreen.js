@@ -51,7 +51,14 @@ export default function MapScreen() {
             </View>
             <Text>Select</Text>
           </TouchableOpacity>
-          <TouchableOpacity className="flex flex-row justify-between items-center p-4 bg-gray-200 my-2 rounded-lg">
+          {/* <TouchableOpacity className="flex flex-row justify-between items-center p-4 bg-gray-200 my-2 rounded-lg">
+            <View className="flex flex-row items-center">
+              <Text className="text-green-500 font-semibold">P</Text>
+              <Text className="ml-2">Street parking</Text>
+            </View>
+            <Text>Select</Text>
+          </TouchableOpacity> */}
+          {/* <TouchableOpacity className="flex flex-row justify-between items-center p-4 bg-gray-200 my-2 rounded-lg">
             <View className="flex flex-row items-center">
               <Text className="text-green-500 font-semibold">P</Text>
               <Text className="ml-2">Street parking</Text>
@@ -64,14 +71,7 @@ export default function MapScreen() {
               <Text className="ml-2">Street parking</Text>
             </View>
             <Text>Select</Text>
-          </TouchableOpacity>
-          <TouchableOpacity className="flex flex-row justify-between items-center p-4 bg-gray-200 my-2 rounded-lg">
-            <View className="flex flex-row items-center">
-              <Text className="text-green-500 font-semibold">P</Text>
-              <Text className="ml-2">Street parking</Text>
-            </View>
-            <Text>Select</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
           
         </ScrollView>
       </View>
