@@ -9,13 +9,12 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    // Use GestureHandlerRootView as the root but styling might need to be standard React Native style
     <GestureHandlerRootView style={{ flex: 1 }}> 
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Map" component={MapScreen} options={{ headerShown: false }} />
           <Stack.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
-          {/* Insert more screens as needed */}
+          {/*  more screens */}
         </Stack.Navigator>
       </NavigationContainer>
     </GestureHandlerRootView>
