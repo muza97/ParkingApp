@@ -7,6 +7,7 @@ import BottomSheet, { BottomSheetScrollView, BottomSheetBackdrop } from '@gorhom
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import { UserCircleIcon } from 'react-native-heroicons/outline';
 
 export default function MapScreen() {
   const navigation = useNavigation();
@@ -85,7 +86,9 @@ export default function MapScreen() {
         />
 
 <View className="absolute top-20 right-4 z-10 flex-col items-center">
-  <ProfileIcon onPress={() => navigation.navigate('Profile')} />
+<TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+            <UserCircleIcon size={33} color="black" />
+          </TouchableOpacity>
   <FontAwesome name="location-arrow" size={30} color={isLocationArrowPressed ? "red" : "black"}  onPress={() => {
           setIsLocationArrowPressed(!isLocationArrowPressed);
           console.log("Location arrow pressed"); }} />
